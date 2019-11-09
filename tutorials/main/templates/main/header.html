@@ -1,0 +1,42 @@
+
+
+<html lang="en">
+<head>
+    <title>hi</title>
+{% load static %}
+
+    <link href="{%  static 'tinymce/css/prism.css' %}" rel="stylesheet">
+    <link href="{%  static 'main/css/materialize.css' %}" rel="stylesheet">
+
+
+    <!-- Compiled and minified CSS -->
+{#    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">#}
+
+    <!-- Compiled and minified JavaScript -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+</head>
+
+<body>
+
+
+  <nav>
+    <div class="nav-wrapper">
+      <a href="#" class="brand-logo">Logo</a>
+      <ul id="nav-mobile" class="right hide-on-med-and-down">
+        <li><a href="{% url 'homepage' %}">Sass</a></li>
+        <li><a href="{% url 'homepage' %}">Components</a></li>
+        <li><a href="{% url 'homepage' %}">JavaScript</a></li>
+      </ul>
+    </div>
+  </nav>
+
+{% block content %}
+{% endblock %}
+
+
+
+</body>
+
+<script src="{% static 'tinymce/js/prism.js' %}"></script>
+
+</html>
