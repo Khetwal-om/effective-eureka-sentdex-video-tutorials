@@ -37,3 +37,12 @@ class Tutorial(models.Model):
 
     def __str__(self):
         return self.tutorial_title
+
+
+
+class Moments(models.Model):
+    title=models.CharField(max_length=200)
+    pic=models.ImageField(upload_to='images/')
+
+    def __str__(self):
+        return self.title

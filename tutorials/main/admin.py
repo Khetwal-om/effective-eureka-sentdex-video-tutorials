@@ -3,6 +3,9 @@ from tinymce import widgets, TinyMCE
 from django.db import models
 from .models import Tutorial,TutorialCategory,TutorialSeries
 
+from .models import Moments
+
+
 
 class TutorialAdmin(admin.ModelAdmin):
     list_display = ['tutorial_title','tutorial_published','tutorial_slug','tutorial_series']
@@ -27,3 +30,7 @@ class TutorialAdmin(admin.ModelAdmin):
 admin.site.register(TutorialCategory)
 admin.site.register(TutorialSeries)
 admin.site.register(Tutorial,TutorialAdmin)
+
+admin.site.register(Moments)
+
+

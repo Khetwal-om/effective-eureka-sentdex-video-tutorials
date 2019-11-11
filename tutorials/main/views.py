@@ -6,7 +6,15 @@ from django.contrib.auth import login,logout,authenticate
 from django.contrib import messages
 from django.http import HttpResponse
 
+
+from . models import Moments
+
+
+
+
+
 def single_slug(request,single_slug):
+
     categories=[c.category_slug for c in TutorialCategory.objects.all()]
     if single_slug in categories:
         matching_series=TutorialSeries.objects.filter(tutorial_category__category_slug=single_slug)
@@ -36,7 +44,9 @@ def single_slug(request,single_slug):
 
 # Create your views here.
 def homepage(request):
-    return render(request,'main/categories.html',{'categories':TutorialCategory.objects.all()})
+    moments=Moments.objects.all()
+
+    return render(request,'main/categories.html',{'categories':TutorialCategory.objects.all(),'moments':moments})
 
 
 

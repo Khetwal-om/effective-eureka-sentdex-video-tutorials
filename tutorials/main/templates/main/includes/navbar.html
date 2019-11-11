@@ -1,17 +1,17 @@
 
   <nav>
-    <div class="nav-wrapper">
-      <a href="{% url 'homepage' %}" class="brand-logo">Logo</a>
+    <div class="nav-wrapper" style="background-color: white">
+      <a href="{% url 'homepage' %}" class="brand-logo" style="color: #B5943C; margin-left: 30px; font-size: 46px ; font-family: 'French Script MT'">Photography</a>
       <ul id="nav-mobile" class="right hide-on-med-and-down">
 
          {% if user.is_authenticated %}
-            <li><a href="{% url 'logout' %}">logout</a></li>
-            <li><a href="#">{{ user.username }}</a></li>
-            <li><a href="/admin">Admin</a></li>
+            <li ><a style="color:#B5943C; font-size: 46px ; font-family: 'French Script MT'" href="{% url 'logout' %}">logout</a></li>
+            <li ><a style="color:#B5943C;font-size: 46px ; font-family: 'French Script MT'" href="#">{{ user.username }}</a></li>
+            <li ><a  style="color:#B5943C;font-size: 46px ; font-family: 'French Script MT'" href="/admin">Admin</a></li>
 
           {% else %}
-              <li><a href="{% url 'login' %}">login</a></li>
-            <li><a href="{% url 'register' %}">Register</a></li>
+              <li style="color:#B5943C"><a href="{% url 'login' %}">login</a></li>
+            <li style="color:#B5943C"><a style="color:#B5943C" href="{% url 'register' %}">Register</a></li>
           {% endif %}
       </ul>
     </div>

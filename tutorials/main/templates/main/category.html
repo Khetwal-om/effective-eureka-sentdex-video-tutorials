@@ -1,5 +1,5 @@
 {% extends 'main/header.html' %}
-
+{% load staticfiles %}
 
 {% block content %}
 
@@ -7,7 +7,10 @@
    {% for tut,partone in part_ones.items %}
       <div class="col s12 m6 l4">
         <a href="{{ partone }}" style="color:#000">
-            <div class="card hoverable">
+            <div class="card-panel hoverable">
+                <div class="card-image">
+                    <img class="responsive-img" src="{% static 'main/images/c.jpg' %}" style="width: 250px">
+                </div>
                 <div class="card-content">
                     <div class="card-title">{{ tut.tutorial_series }}</div>
                     <p>{{ tut.series_summary }}</p>
@@ -20,3 +23,4 @@
 
 
 {% endblock %}
+
