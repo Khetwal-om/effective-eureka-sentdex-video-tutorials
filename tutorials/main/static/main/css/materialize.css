@@ -2393,7 +2393,7 @@ nav ul a span.badge {
   margin-left: 4px;
   line-height: 22px;
   height: 22px;
-  -webkit-font-smoothing: auto; }
+}
 
 .collection-item span.badge {
   margin-top: calc(0.75rem - 11px); }
@@ -3920,7 +3920,7 @@ body.keyboard-focused .dropdown-content li:focus {
 
 .waves-circle {
   transform: translateZ(0);
-  -webkit-mask-image: -webkit-radial-gradient(circle, white 100%, black 100%); }
+}
 
 .waves-input-wrapper {
   border-radius: 0.2em;
@@ -5886,8 +5886,8 @@ input[type=range]::-ms-thumb {
         font-size: 15px; }
   .carousel .carousel-item {
     visibility: hidden;
-    width: 200px;
-    height: 200px;
+    width: 800px;
+    height: 400px;
     position: absolute;
     top: 0;
     left: 0; }
