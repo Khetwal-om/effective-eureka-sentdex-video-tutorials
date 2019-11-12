@@ -9,11 +9,14 @@
         <a href="{{ partone }}" style="color:#000">
             <div class="card-panel hoverable">
                 <div class="card-image">
-                    <img class="responsive-img" src="{% static 'main/images/c.jpg' %}" style="width: 250px">
+                    <img class="responsive-img" src="{% static 'main/images/f.jpg   ' %}" style="width: 250px">
                 </div>
                 <div class="card-content">
                     <div class="card-title">{{ tut.tutorial_series }}</div>
                     <p>{{ tut.series_summary }}</p>
+                </div>
+                 <div class="card-action">
+                  <a href="{{ cat.category_slug }}" class="waves-effect waves-light btn" style="color:#000000; background-color:#FFD166">View</a>
                 </div>
             </div>
         </a>
